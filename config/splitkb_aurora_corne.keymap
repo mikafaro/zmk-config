@@ -32,12 +32,12 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  ESC  |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |   '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSHFT |
-//       | BSPC | Supermod/SPACE | SUPER |   | RSE | LALT/ENT | LWR |
+//       | SUPER | Supermod/SPACE | BSPC |   | RSE | LALT/ENT | LWR |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-       &kp BSPC &tp LS(LGUI) SPACE &kp LGUI    &mo RSE &tp LALT RET &mo LWR
+       &kp LGUI &tp LS(LGUI) SPACE &kp BSPC    &mo RSE &tp LALT RET &mo LWR
                         >;
                 };
                 lower_layer {
