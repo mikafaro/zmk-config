@@ -32,12 +32,12 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  ESC  |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |   '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RSHFT |
-//       | BSPC | Supermod/SPACE | SUPER |  | LALT/ENT | RSE | LWR |
+//       | BSPC | SPACE | SUPER |                  | LALT/ENT | RSE | LWR |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-       &kp BSPC &tp LS(LGUI) SPACE &kp LGUI    &tp LALT RET &mo RSE &mo LWR
+       &kp BSPC &kp SPACE &kp LGUI    &tp LALT RET &mo RSE &mo LWR
                         >;
                 };
                 lower_layer {
@@ -47,9 +47,9 @@
 // | SHFT  |  F6  |  F7  |  F8  |  F9  |  F10 |   |  PP  | Prev  | Vol - | Vol + | Next | PGDN |
 //                      |      |      |      |     |      |       |       |
                         bindings = <
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans       &trans     &trans       &trans       &trans      &kp HOME
-   &kp LALT   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5          &trans       &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT   &kp PG_UP
-   &kp LSHFT  &kp F6       &kp F7       &kp F8       &kp F9       &kp F10         &kp C_PP     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT  &kp PG_DN
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none        &none        &none        &none        &none      &kp HOME
+   &kp LALT   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5          &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &none      &kp PG_UP
+   &kp LSHFT  &kp F6       &kp F7       &kp F8       &kp F9       &kp F10         &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV   &kp C_NEXT   &kp C_PP   &kp PG_DN
                                                  &trans  &trans  &trans             &trans  &trans  &trans
                         >;
                 };
